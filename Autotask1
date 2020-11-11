@@ -86,8 +86,8 @@ await registerKeeper(signer, registry);
 // Entrypoint for the Autotask
 exports.handler = async function(credentials) {
   const provider = ethers.getDefaultProvider("mainnet", { 
-  etherscan: '5AYE5518GVRQ1GK7ZSKQRJXA1DFVV3HEH8',
-  alchemy: 'u9jyH-D71Z_y9L9K3mn5Ma3gtmRQrbhB',
+  etherscan: 'XXXXX',
+  alchemy: 'XXXX',
   });
   const signer = new DefenderRelaySigner(credentials, provider, { speed: 'fastest' });
   return await main(signer, Jobs, RegistryAddress);
